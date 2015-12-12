@@ -20,7 +20,7 @@ MongoDB
 https://docs.c9.io/docs/setup-a-database
 From the Terminal, run the following command:
 
-$ mongod --bind_ip=$IP --nojournal
+    $ mongod --bind_ip=$IP --nojournal
 
 The output will include:
 
@@ -29,21 +29,21 @@ waiting for connections on port 27017
 Now you can open the mongo shell in a new Terminal, running following command:
 
 If Error!
-$ cd /data/db
-$ rm mongodb.lock
-than once more
-$ mongod --bind_ip=$IP --nojournal
+    $ cd /data/db
+    $ rm mongodb.lock
+    than once more
+    $ mongod --bind_ip=$IP --nojournal
 
-$ mongo
-To stop the MongoDB instance press Control + C in the Terminal where mongod is running. Now have a look at the currently used database:
 
-$ mongo
-mongo> db
-test
+To stop the MongoDB instance press Control + C in the Terminal where mongod is running. 
+Now have a look at the currently used database:
 
-cd ~
-wget -O cf.tgz 'https://cli.run.pivotal.io/stable?release=linux64-binary&source=github'
-tar xvzf cf.tgz
+    $ mongo
+    mongo> db
+    test
+
+
+$ cd ~wget -O cf.tgz 'https://cli.run.pivotal.io/stable?release=linux64-binary&source=github'tar xvzf cf.tgz
 
 Happy coding!
 The Cloud9 IDE team
