@@ -20,12 +20,10 @@ MongoDB
 https://docs.c9.io/docs/setup-a-database
 From the Terminal, run the following command:
 
-Terminal
 $ mongod --bind_ip=$IP --nojournal
 
 The output will include:
 
-Terminal
 ...
 waiting for connections on port 27017
 Now you can open the mongo shell in a new Terminal, running following command:
@@ -36,11 +34,9 @@ $ rm mongodb.lock
 than once more
 $ mongod --bind_ip=$IP --nojournal
 
-Terminal
 $ mongo
 To stop the MongoDB instance press Control + C in the Terminal where mongod is running. Now have a look at the currently used database:
 
-Terminal
 $ mongo
 mongo> db
 test
